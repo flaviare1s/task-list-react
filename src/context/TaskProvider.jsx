@@ -12,17 +12,24 @@ export const TaskProvider = ({ children }) => {
     async function fetchUserAndTask() {
       const userRes = await axios.get(`/users/${userId}`);
       setUser(userRes.data);
-      console.log(userRes.data)
 
       const taskRes = await axios.get(`/tasks?userId=${userId}`);
       setTask(taskRes.data);
-      console.log(taskRes.data)
     }
     fetchUserAndTask();
   }, [userId]);
 
+  const addTask = async (title) => {
+    const response = await axios.post("/tasks", {
+      title,
+      completed: false,
+      userId
+    })
+    setTask(prev => [...prev, response.data])
+  }
+
   return (
-    <TaskContext.Provider value={{}}>
+    <TaskContext.Provider value={{addTask}}>
       {children}
     </TaskContext.Provider>
   );

@@ -1,13 +1,22 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
+import { TaskContext } from "../context/TaskProvider";
 
 export const TaskForm = () => {
   const [title, setTitle] = useState("");
+  const { addTask } = useContext(TaskContext)
   const inputRef = useRef();
 
-  console.log(title)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if(!title.trim()) return;
+    addTask(title);
+    setTitle("");
+  }
+
+  console.log(title);
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input
         ref={inputRef}
         value={title}
