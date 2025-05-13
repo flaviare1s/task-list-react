@@ -1,10 +1,17 @@
 import "./App.css";
+import { TaskForm } from "./components/TaskForm";
 
 function App() {
   return (
-    <>
-      <h1>App Works!</h1>
-    </>
+    <div>
+      <aside>
+
+      </aside>
+      <main>
+        <h1>TODO List</h1>
+        <TaskForm />
+      </main>
+    </div>
   );
 }
 
