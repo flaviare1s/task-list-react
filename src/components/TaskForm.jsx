@@ -14,7 +14,7 @@ export const TaskForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="task-form" onSubmit={handleSubmit}>
       <input
         ref={inputRef}
         value={title}

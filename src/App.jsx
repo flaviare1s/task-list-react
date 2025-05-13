@@ -4,12 +4,12 @@ import { TaskList } from "./components/TaskList";
 
 function App() {
   return (
-    <div>
-      <aside>
+    <div className="app-container">
+      <aside className="sidebar">
 
       </aside>
-      <main>
-        <h1>TODO List</h1>
+      <main className="main-content">
+        <h1 className="title">TODO List</h1>
         <TaskForm />
         <TaskList />
       </main>
