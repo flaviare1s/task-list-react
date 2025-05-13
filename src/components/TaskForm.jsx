@@ -13,8 +13,6 @@ export const TaskForm = () => {
     setTitle("");
   }
 
-  console.log(title);
-
   return (
     <form onSubmit={handleSubmit}>
       <input

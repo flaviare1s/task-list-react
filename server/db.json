@@ -11,26 +11,14 @@
   ],
   "tasks": [
     {
-      "id": "1",
-      "title": "Estudar React",
+      "id": "daf9",
+      "title": "Teste 3",
       "completed": false,
       "userId": "1"
     },
     {
-      "id": "2",
-      "title": "Criar projeto com JSON Server",
-      "completed": true,
-      "userId": "2"
-    },
-    {
-      "id": "37e5",
-      "title": "Comer batata",
-      "completed": false,
-      "userId": "1"
-    },
-    {
-      "id": "7719",
-      "title": "Comer chocolate",
+      "id": "ce59",
+      "title": "Teste 4",
       "completed": false,
       "userId": "1"
     }

@@ -1,5 +1,6 @@
 import "./App.css";
 import { TaskForm } from "./components/TaskForm";
+import { TaskList } from "./components/TaskList";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <h1>TODO List</h1>
         <TaskForm />
+        <TaskList />
       </main>
     </div>
   );
