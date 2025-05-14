@@ -25,7 +25,7 @@ export const AuthProvider = ({children}) => {
                 username,
                 password
             });
-            const token = res.data.token;
+            const token = res.data.accessToken;
             const userId =res.data.id;
 
             localStorage.setItem('token', token)
