@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import axios from "../../service/api.js";
+import axios from "../service/api.js";
 
 export const TaskContext = createContext();
 

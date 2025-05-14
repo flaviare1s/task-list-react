@@ -127,3 +127,12 @@
 .task-item button:hover {
   transform: scale(1.2);
 }
+
+.user-switcher button {
+  padding: 5px 30px;
+  min-width: 150px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  color: black;
+  cursor: pointer;
+}
