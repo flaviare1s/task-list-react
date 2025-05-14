@@ -23,24 +23,26 @@ export const TaskProvider = ({ children }) => {
     const response = await axios.post("/tasks", {
       title,
       completed: false,
-      userId
-    })
-    setTasks(prev => [...prev, response.data])
-  }
+      userId,
+    });
+    setTasks((prev) => [...prev, response.data]);
+  };
 
   const toggleTask = async (task) => {
-    const updated = {...task, completed: !task.completed}
-    await axios.patch(`/tasks/${task.id}`, { completed: updated.completed })
-    setTasks(prev => prev.map(t => (t.id === task.id ? updated : t)))
-  }
+    const updated = { ...task, completed: !task.completed };
+    await axios.patch(`/tasks/${task.id}`, { completed: updated.completed });
+    setTasks((prev) => prev.map((t) => (t.id === task.id ? updated : t)));
+  };
 
   const removeTask = async (id) => {
-    await axios.delete(`/tasks/${id}`)
-    setTasks(prev => prev.filter(t => t.id != id))
-  }
+    await axios.delete(`/tasks/${id}`);
+    setTasks((prev) => prev.filter((t) => t.id != id));
+  };
 
   return (
-    <TaskContext.Provider value={{ user, tasks, setUserId, addTask, toggleTask, removeTask }}>
+    <TaskContext.Provider
+      value={{ user, tasks, setUserId, addTask, toggleTask, removeTask }}
+    >
       {children}
     </TaskContext.Provider>
   );

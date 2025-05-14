@@ -2,7 +2,7 @@ import { TaskForm } from "../components/TaskForm"
 import { TaskList } from "../components/TaskList"
 import { UserSwitcher } from "../components/UserSwitcher"
 
-export const TodoList = () => {
+export const TaskPage = () => {
   return (
     <div className="app-container">
       <aside className="sidebar">
