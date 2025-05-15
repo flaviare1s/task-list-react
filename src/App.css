@@ -11,6 +11,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.greetings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+}
+
 .app-container {
   display: flex;
   gap: 2rem;

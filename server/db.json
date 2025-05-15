@@ -11,22 +11,10 @@
   ],
   "tasks": [
     {
-      "id": "534d",
-      "title": "Comer fora",
-      "completed": false,
-      "userId": "1"
-    },
-    {
       "id": "b043",
       "title": "Tarefa da Ana",
       "completed": false,
       "userId": "2"
-    },
-    {
-      "id": "da56",
-      "title": "Tarefa do Carlos",
-      "completed": false,
-      "userId": "1"
     },
     {
       "id": "4aa7",
@@ -35,16 +23,16 @@
       "userId": "2"
     },
     {
-      "id": "48a6",
-      "title": "Estudar",
-      "completed": false,
-      "userId": "1"
-    },
-    {
       "id": "082f",
       "title": "Comprar batata no intervalo",
       "completed": true,
       "userId": "2"
+    },
+    {
+      "id": "c437",
+      "title": "Tarefa do Carlos",
+      "completed": false,
+      "userId": "1"
     }
   ]
 }
