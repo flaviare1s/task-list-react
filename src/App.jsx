@@ -4,9 +4,12 @@ import { Login } from "./pages/Login";
 import { TaskPage } from "./pages/TaskPage";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthProvider";
+import { CircularProgress } from "@mui/material";
 
 function App() {
-  const { user } = useContext(AuthContext)
+  const { user, loading } = useContext(AuthContext)
+
+  if(loading) return <CircularProgress />
 
   return (
     <Routes>
