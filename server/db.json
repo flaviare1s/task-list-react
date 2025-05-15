@@ -29,12 +29,6 @@
       "userId": "1"
     },
     {
-      "id": "1892",
-      "title": "teste",
-      "completed": false,
-      "userId": "2"
-    },
-    {
       "id": "4aa7",
       "title": "Tarefa da Ana 2",
       "completed": false,
@@ -45,6 +39,12 @@
       "title": "Estudar",
       "completed": false,
       "userId": "1"
+    },
+    {
+      "id": "082f",
+      "title": "Comprar batata no intervalo",
+      "completed": true,
+      "userId": "2"
     }
   ]
 }

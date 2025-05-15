@@ -24,11 +24,12 @@ export const Login = () => {
 
   return (
     <Container maxWidth="xs" sx={{ mt: 10 }}>
-      <Typography variant="h5" align="center" gutterBottom>
+      <Typography variant="h5" align="center" gutterBottom sx={{ color: "#61dafb", fontWeight: "bold" }}>
         Login
       </Typography>
-      <Box component="form" onSubmit={handleSubmit}>
+      <Box component="form" onSubmit={handleSubmit} sx={{ display: "flex", flexDirection: "column", gap: 3 }}>
         <TextField
+          sx={{ backgroundColor: "#474747", borderRadius: "8px" }}
           label="Usuário"
           variant="outlined"
           type="text"
@@ -38,6 +39,7 @@ export const Login = () => {
         />
 
         <TextField
+          sx={{ backgroundColor: "#474747", borderRadius: "8px" }}
           label="Senha"
           variant="outlined"
           type="password"
@@ -51,7 +53,7 @@ export const Login = () => {
           <CircularProgress />
         </Box>
         ) : (
-          <Button variant="contained" type="submit">
+          <Button variant="contained" type="submit" sx={{ backgroundColor: "#61dafb", color: "black", fontWeight: "bold" }}>
             Entrar
           </Button>
         )}
