@@ -31,6 +31,7 @@ export const Login = () => {
         <TextField
           label="Usuário"
           variant="outlined"
+          type="text"
           fullWidth
           value={username}
           onChange={(e) => setUsername(e.target.value)}
@@ -39,6 +40,7 @@ export const Login = () => {
         <TextField
           label="Senha"
           variant="outlined"
+          type="password"
           fullWidth
           value={password}
           onChange={(e) => setPassword(e.target.value)}

@@ -30,6 +30,7 @@ export const AuthProvider = ({children}) => {
 
             localStorage.setItem('token', token)
             await fetchUser(userId, token);
+            navigate("/tasks")
         } catch (err) {
             throw new Error('Usuário ou senha inválidos')
         }

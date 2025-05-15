@@ -1,13 +1,17 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Login } from "./pages/Login";
 import { TaskPage } from "./pages/TaskPage";
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthProvider";
 
 function App() {
+  const { user } = useContext(AuthContext)
+
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/tasks" element={<TaskPage />} />
+      <Route path="/tasks" element={user ? <TaskPage /> : <Navigate to="/" replace />} />
     </Routes>
   );
 }
