@@ -146,3 +146,14 @@
   color: black;
   cursor: pointer;
 }
+
+@media screen and (max-width: 550px) {
+  .greetings {
+    padding: 8px;
+  }
+  
+  .app-container {
+    flex-direction: column;
+    padding: 8px;
+  }
+}
