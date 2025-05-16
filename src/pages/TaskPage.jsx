@@ -8,12 +8,12 @@ import { AuthContext } from "../context/AuthProvider"
 
 export const TaskPage = () => {
   const { tasks } = useContext(TaskContext)
-  const { logout } = useContext(AuthContext)
+  const { logout, user } = useContext(AuthContext)
  
   return (
     <div>
       <div className="greetings">
-        <p>Olá!</p>
+        {user && <p>Olá, {user.firstName}!</p>}
         <Button onClick={logout} variant="contained" type="submit" sx={{ backgroundColor: "#61dafb", color: "black", fontWeight: "bold" }}>
             Sair
         </Button>
